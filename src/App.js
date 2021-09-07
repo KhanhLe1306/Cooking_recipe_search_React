@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Recipe from './Recipe'
 import { v4 as uuidv4 } from 'uuid';
+import Logo from './Logo'
 import './App.css'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   }, [query]);
 
   const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-1500&health=alcohol-free`)
+    const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=25&calories=591-1500&health=alcohol-free`)
     const data = await response.json()
     setRecipes(data.hits)
     console.log(data)
@@ -36,7 +37,7 @@ function App() {
   return (
     <div className="app">
       <form onSubmit={updateQuery} className="search-form">
-        <input className="search-bar" type="text" placeholder="Type something" value={search} onChange={updateSearch} />
+        <input className="search-bar" type="text" placeholder="Search" value={search} onChange={updateSearch} />
         <button className="search-button" type="submit">Get recipes</button>
       </form>
       <div className="recipes">
@@ -44,6 +45,7 @@ function App() {
           <Recipe key={uuidv4()} label={recipe.recipe.label} calories={recipe.recipe.calories} image={recipe.recipe.image} ingredients={recipe.recipe.ingredients} />
         ))}
       </div>
+      <Logo />
     </div>
   )
 }

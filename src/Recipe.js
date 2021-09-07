@@ -3,13 +3,15 @@ import React from 'react'
 function Recipe({ label, calories, image, ingredients }) {
     return (
         <div className="recipe">
-            <h1>{label}</h1>
-            <ul>
+            <div className="recipe_info">
+                <h1>{label}</h1>
+                <ul>
                 {ingredients.map(ingredient => (
                     <li>{ingredient.text}</li>
                 ))}
-            </ul>
-            <h2>{calories}</h2>
+                </ul>
+            </div>
+            <h2> {calories.toFixed(0)} calories</h2>
             <div className="image">
                 <img src={image} alt="" />
             </div>
