@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Cooking_recipe_search_React/static/css/main.5f1026cd.chunk.css",
+    "main.js": "/Cooking_recipe_search_React/static/js/main.ff15dc67.chunk.js",
+    "main.js.map": "/Cooking_recipe_search_React/static/js/main.ff15dc67.chunk.js.map",
+    "runtime-main.js": "/Cooking_recipe_search_React/static/js/runtime-main.a883193e.js",
+    "runtime-main.js.map": "/Cooking_recipe_search_React/static/js/runtime-main.a883193e.js.map",
+    "static/js/2.51fa8596.chunk.js": "/Cooking_recipe_search_React/static/js/2.51fa8596.chunk.js",
+    "static/js/2.51fa8596.chunk.js.map": "/Cooking_recipe_search_React/static/js/2.51fa8596.chunk.js.map",
+    "static/js/3.481444ea.chunk.js": "/Cooking_recipe_search_React/static/js/3.481444ea.chunk.js",
+    "static/js/3.481444ea.chunk.js.map": "/Cooking_recipe_search_React/static/js/3.481444ea.chunk.js.map",
+    "index.html": "/Cooking_recipe_search_React/index.html",
+    "static/css/main.5f1026cd.chunk.css.map": "/Cooking_recipe_search_React/static/css/main.5f1026cd.chunk.css.map",
+    "static/js/2.51fa8596.chunk.js.LICENSE.txt": "/Cooking_recipe_search_React/static/js/2.51fa8596.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a883193e.js",
+    "static/js/2.51fa8596.chunk.js",
+    "static/css/main.5f1026cd.chunk.css",
+    "static/js/main.ff15dc67.chunk.js"
+  ]
+}
